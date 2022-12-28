@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+
+import { ThemeProvider } from 'styled-components';
 import './App.css';
+import BrightFuture from './components/BrightFuture';
+import CardBox from './components/CardBox';
+import Image from './components/Image';
+import Menu from './components/Menu';
+import News from './components/News';
+import theme from './theme';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <ThemeProvider theme={theme}>
+    <div className="app">
+      <Menu/>
+      <div className="flex-container">
+        <div >
+    <div className="padding"><Image/></div>  
+    <BrightFuture/>
     </div>
+    <div className="padding">
+    <News/></div>  
+    </div>
+    <div className="padding">
+      <CardBox/>
+    </div>
+      </div>
+      </ThemeProvider>
   );
 }
 
