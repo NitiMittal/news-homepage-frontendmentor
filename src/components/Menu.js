@@ -24,19 +24,19 @@ const Menu = () => {
         {isDesktop && (
           <ul className="desktop-menu">
             <li>
-              <a href="##">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
-              <a href="##">New</a>
+              <a href="/">New</a>
             </li>
             <li>
-              <a href="##">Popular</a>
+              <a href="/">Popular</a>
             </li>
             <li>
-              <a href="##">Trending</a>
+              <a href="/">Trending</a>
             </li>
             <li>
-              <a href="##">Categories</a>
+              <a href="/">Categories</a>
             </li>
           </ul>
         )}
@@ -59,19 +59,19 @@ const Menu = () => {
         />
         <ul className="mobile-menu">
           <li className="home">
-            <a href="##">Home</a>
+            <a href="/">Home</a>
           </li>
           <li>
-            <a href="##">New</a>
+            <a href="/">New</a>
           </li>
           <li>
-            <a href="##">Popular</a>
+            <a href="/">Popular</a>
           </li>
           <li>
-            <a href="##">Trending</a>
+            <a href="/">Trending</a>
           </li>
           <li>
-            <a href="##">Categories</a>
+            <a href="/">Categories</a>
           </li>
         </ul>
       </div>
