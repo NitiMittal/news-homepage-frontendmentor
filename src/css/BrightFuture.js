@@ -32,12 +32,15 @@ export const BrightFutureContainer = styled.div`
 
   @media (min-width: 1440px) {
     margin-right: ${(props) => props.theme.spaces.m};
+    width:94%;
+
     .flex-container {
       display: flex;
+      justify-content: space-between;
     }
 
     .heading {
-      margin-right: ${(props) => props.theme.spaces.xxl};
+      margin-right: 30px;
       margin-top: 10px;
       font-size: 40px;
     }
